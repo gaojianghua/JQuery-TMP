@@ -1,0 +1,17 @@
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+    *, :after, :before {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+
+    .h5 {
+        display: block;
+    }
+
+    .pc {
+        display: none;
+    }
+}
