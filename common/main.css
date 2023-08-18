@@ -8,6 +8,10 @@
 	display: inline-block;
 }
 
+.main-color {
+	color: var(--main);
+}
+
 body {
 	--primary: #007bff;
 	--secondary: #6c757d;
@@ -21,6 +25,7 @@ body {
 	--white: #fff;
 	--borderColor: #f5f5f5;
 	--lightmuted: #B2B2B2;
+	--main: #FBFE7B;
 }
 
 /* 阴影 */
@@ -1210,7 +1215,8 @@ body {
 }
 
 /* 图片 */
-video, img {
+video,
+img {
 	display: block;
 }
 
@@ -1233,4 +1239,36 @@ button {
 	padding-right: 0;
 	line-height: inherit;
 	border-radius: 0;
+}
+
+.box {
+	background-color: rgba(255, 255, 255, .5);
+	background-size: 100% 100%;
+	border: 1px solid var(--main);
+}
+
+.cur {
+	cursor: pointer;
+}
+
+a {
+	text-decoration: none !important;
+}
+
+html,
+body,
+h1,
+div,
+p {
+	padding: 0;
+	margin: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	appearance: none;
+}
+
+input[type="number"] {
+	appearance: textfield;
 }
