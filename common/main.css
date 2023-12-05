@@ -9,7 +9,7 @@
 }
 
 .main-color {
-	color: var(--main);
+	color: var(--main) !important;
 }
 
 body {
@@ -1262,6 +1262,7 @@ div,
 p {
 	padding: 0;
 	margin: 0;
+	box-sizing: border-box !important;
 }
 
 input::-webkit-outer-spin-button,
@@ -1271,4 +1272,11 @@ input::-webkit-inner-spin-button {
 
 input[type="number"] {
 	appearance: textfield;
+}
+
+.main{
+    background: url(https://website-gao.oss-cn-hangzhou.aliyuncs.com/bg.jpg) no-repeat;
+    background-size: 100% 100%;
+    height: 100vh;
+    width: 100%;
 }
