@@ -1,8 +1,18 @@
-$("#header").load("../../layout/header/header.html");
-$("#footer").load("../../layout/footer/footer.html");
 
+$(document).ready(function () {
+    let currentPath = window.location.pathname; // 获取当前页面的路径
+
+    $('.header .navbar a').each(function () {
+        let linkPath = $(this).attr('href'); // 获取每个链接的路径
+        console.log(currentPath, linkPath);
+        if (linkPath == currentPath) {
+            $(this).addClass('active'); // 如果链接的路径与当前页面的路径相等，则添加 active 类
+        }
+    });
+});
 $(function () {
     $(document).ready(function () {
+
         let images = ["swiper1.jpg", "swiper2.jpg", "swiper3.jpg", "swiper4.jpg", "swiper5.jpg"]; // 图片文件名数组
 
         let $imgsContainer = $(".imgs"); // 获取图片容器
