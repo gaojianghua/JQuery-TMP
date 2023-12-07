@@ -76,8 +76,11 @@
     height: calc(100vh - 0.75rem - 10rem);
 
     .content {
-        width: 72rem;
         border-radius: .625rem;
+
+        .notice{
+            width: 72rem;
+        }
     }
 }
 
